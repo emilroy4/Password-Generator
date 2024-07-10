@@ -1,1 +1,3 @@
-Password Generator 
+Password Generator.
+
+Created using React Native.
