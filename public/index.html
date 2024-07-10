@@ -12,9 +12,9 @@
     <h1>Generate a<br><span>Password</span></h1>
     <div class="display">
       <input type="text" id="password" placeholder="Password">
-      <img src="/public/co.png">
+      <img src="/password/public/co.png" onclick="copyPassword()">
     </div>
-    <button onclick="createPassword()"><img src="/password/src/create.png"> Password</button>
+    <button onclick="createPassword()"><img src="/password/src/create.png">Generate</button>
   </div>
 
   <script>
@@ -41,6 +41,11 @@
 
         }
         passwordBox.value = password;
+    }
+
+    function copyPassword() {
+      passwordBox.select();
+      document.execCommand("copy"); 
     }
 
   </script>
