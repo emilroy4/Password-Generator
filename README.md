@@ -1,7 +1,7 @@
 Password Generator.
 
 
-![B7AA6856-5E9D-4634-B876-9E3BC53A10A7_1_102_o](https://github.com/emilroy4/Password-Generator/assets/92442806/46a28705-cbc6-4467-9549-19312bc1dc25)
+https://github.com/emilroy4/Password-Generator/assets/92442806/826d111c-3436-4a8c-83d4-9d1f00d6ffb4
 
 
 Created using React Native.
