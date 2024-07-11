@@ -2,53 +2,30 @@
 <html lang="en">
 
 <head>
-  <meta name=viewport="width=device-width, initial-scale=1.0">
+  <meta name=viewport"width=device-width, initial-scale=1.0">
   <title>Password Generator</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/anime.js/3.8.3/anime.min.js"></script>
 </head>
 
 <body>
-  <div class="container">
-    <h1>Generate a<br><span>Password</span></h1>
-    <div class="display">
-      <input type="text" id="password" placeholder="Password">
-      <img src="/password/public/co.png" onclick="copyPassword()">
+
+  
+
+  <div id="overview">
+    <div class="container">
+      <h1>Generate a<br><span>Password</span></h1>
+      <div class="display">
+        <input type="text" id="password" placeholder="Password">
+        <img src="/password/public/co.png" onclick="copyPassword()">
+      </div>
+      <button onclick="createPassword()"><img src="/password/public/src/create.png">Generate</button>
     </div>
-    <button onclick="createPassword()"><img src="/password/src/create.png">Generate</button>
   </div>
 
-  <script>
-    const passwordBox = document.getElementById("password");
-    const length = 12;
-
-    const upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    const lowerCase = "abcdefghijklmnopqrstuvwxyz";
-    const number = "1234567890";
-    const symbol = "@#$%!()*+-./:;<>";
-
-    const allChars = upperCase + lowerCase + symbol +number;
-
-
-    function createPassword() {
-      let password = "";
-      password += upperCase[Math.floor(Math.random() * upperCase.length)];
-      password += lowerCase[Math.floor(Math.random() * lowerCase.length)];
-      password += number[Math.floor(Math.random() * number.length)];
-      password += symbol[Math.floor(Math.random() * symbol.length)];
-
-        while(length > password.length){
-          password += allChars[Math.floor(Math.random() * allChars.length)];
-
-        }
-        passwordBox.value = password;
-    }
-
-    function copyPassword() {
-      passwordBox.select();
-      document.execCommand("copy"); 
-    }
-
-  </script>
+  <script src="script.js"></script>
 
 </body>
 
