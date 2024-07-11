@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 body {
-  background: linear-gradient(to right, #ff47a1 0%, #ff9f4d 100%);
+  background: linear-gradient(to right, #ff2323 0%, #aa01c47b 100%);
 }
 
 #sky {
@@ -91,10 +91,43 @@ body {
     color: #ffffff;
     font-size: 22px;
     font-weight: 300;
-    display: flex;
     align-items: center;
     justify-content: center;
     padding: 16px 26px;
     border-radius: 5px;
     cursor: pointer;
+    position: center;
+    top: 50%;
+    width: 100%;
+    
+}
+
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+.content {
+    display: block;
+    font-family: "helvetica";
+    height: auto;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    top: 40%;
+    
+}
+
+
+.typewrite {
+  font-size: 180%;
+  color: #fff;
+  border-right: 2px solid rgba(255,255,255,.75);
+  line-height: 1.15;
+}
+
+.anim-typewrite {
+  animation: blinkTextCursor 500ms infinite normal;
+}
+
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
 }

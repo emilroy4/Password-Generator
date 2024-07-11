@@ -8,6 +8,7 @@ const symbol = "@#$%!()*+-./:;<>";
 
 const allChars = upperCase + lowerCase + symbol + number;
 
+
 function createPassword() {
   let password = "";
   password += upperCase[Math.floor(Math.random() * upperCase.length)];
@@ -26,6 +27,9 @@ function copyPassword() {
   document.execCommand("copy"); 
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  ReactDOM.render(React.createElement(StarrySky), document.getElementById("root"));
-});
+// Add event listeners for button and image clicks
+const generateButton = document.querySelector("#overview button");
+generateButton.addEventListener("click", createPassword);
+
+const copyImage = document.querySelector("#overview .display img");
+copyImage.addEventListener("click", copyPassword);

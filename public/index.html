@@ -5,27 +5,44 @@
   <meta name=viewport"width=device-width, initial-scale=1.0">
   <title>Password Generator</title>
   <link rel="stylesheet" href="style.css">
-  <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
-  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/anime.js/3.8.3/anime.min.js"></script>
+
 </head>
 
-<body>
 
+
+<body>
   
 
-  <div id="overview">
+
     <div class="container">
-      <h1>Generate a<br><span>Password</span></h1>
+
+
+      <p class="content">
+        <span class="typewrite anim-typewrite js-typewrite"></span>
+      </p>
+
       <div class="display">
         <input type="text" id="password" placeholder="Password">
         <img src="/password/public/co.png" onclick="copyPassword()">
       </div>
       <button onclick="createPassword()"><img src="/password/public/src/create.png">Generate</button>
+    
+    
     </div>
-  </div>
 
-  <script src="script.js"></script>
+    <script src="./script.js"></script>
+    <script src="./h1.js"></script>
+
+
+    
+    <div id="root"/> 
+
+    <script src='https://unpkg.com/react@17/umd/react.development.js'></script>
+    <script src='https://unpkg.com/react-dom@17/umd/react-dom.development.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/animejs/3.1.0/anime.min.js'></script>
+    <script src="./starrysky.js"></script>
+
+  
 
 </body>
 
